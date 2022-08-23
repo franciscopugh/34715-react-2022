@@ -1,16 +1,18 @@
 import React from 'react';
 import Form from './Form'
-import img from '../../public/img/1.jpg'
+import Boton from './Boton';
+
 const Navbar = () => {
   console.log()
+  const user = {nombre: "Francisco", direccion: "Calle Falsa 123"}
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
         <a className="navbar-brand" href="#">Navbar</a>
     <div className="collapse navbar-collapse" id="navbarColor02">
-      <img src={img} alt="" />
-      <Form contBuscar="Productos"/>
+      
+      <Form boton={<Boton/>}/>
      {/*<Form contBuscar="Sucursales"/>*/}
     </div>
       </div>
@@ -20,6 +22,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-
-/*
-*/
