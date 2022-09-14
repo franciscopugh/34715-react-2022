@@ -1,7 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import {Link} from 'react-router-dom'
+import { DarkModeContext } from '../context/DarkModeContext.jsx';
+import PantallaCarga from './PantallaCarga.jsx';
 const Home = () => {
     const [productos, setProductos] = useState([]);
+    const {darkMode, toggleDarkMode} =  useContext(DarkModeContext);
 
   useEffect(() => {
     fetch("./json/productos.json")
@@ -28,10 +31,16 @@ const Home = () => {
 
 
   return (
-    <div className="row">
      
-      {productos}
-    </div>  
+      
+      <div className={darkMode ? 'darkMode row' : 'row'}>
+         <PantallaCarga/>
+          <button className={darkMode ? 'btn btn-light' : 'btn btn-dark'} onClick={() => toggleDarkMode()}>Cambiar Modo</button>
+          {productos}
+        </div>
+      
+        
+ 
     
   );
   

@@ -4,6 +4,7 @@
         "nombre": "Notebook",
         "marca": "Lenovo",
         "modelo": "Y510P",
+        "categoria": "Computadora",
         "precio": 60000,
         "stock": 30,
         "img": "notebook-lenovo.jpg"
@@ -13,6 +14,7 @@
         "nombre": "Celular",
         "marca": "Xiomi",
         "modelo": "Mi-9",
+        "categoria": "Celular",
         "precio": 35000,
         "stock": 20,
         "img": "xiaomi-mi-9.jpg"
@@ -21,23 +23,26 @@
         "id": 3,
         "nombre": "Smart Tv",
         "marca": "Novatech",
+        "categoria": "Television",
         "modelo": "50D1U",
         "precio": 57000,
         "stock": 15,
         "img": "smart-tv-novatech.jpg"
     },
     {
-        "id": 14,
+        "id": 4,
         "nombre": "Camara Deportiva",
         "marca": "iQual",
+        "categoria": "Foto",
         "modelo": "C40",
         "precio": 8000,
         "stock": 30,
         "img": "camara-iqual.jpg"
     },
     {
-        "id": 4,
+        "id": 5,
         "nombre": "Mouse",
+        "categoria": "Computadora",
         "marca": "Logitech",
         "modelo": "G502",
         "precio": 1400,
@@ -45,7 +50,8 @@
         "img": "mouse-logitech.jpg"
     },
     {
-        "id": 5,
+        "id": 6,
+        "categoria": "Audio",
         "nombre": "Auriculares",
         "marca": "Motorola",
         "modelo": "Pulse Escape",
@@ -54,7 +60,8 @@
         "img": "motorola-pulse.jpg"
     },
     {
-        "id": 6,
+        "id": 7,
+        "categoria": "Celular",
         "nombre": "iPhone",
         "marca": "Apple",
         "modelo": "X Silver",
@@ -63,7 +70,8 @@
         "img": "iphone-x.jpg"
     },
     {
-        "id": 7,
+        "id": 8,
+        "categoria": "Television",
         "nombre": "Apple TV",
         "marca": "Apple ",
         "modelo": "32 Gb",
@@ -72,7 +80,8 @@
         "img": "apple-tv.jpg"
     },
     {
-        "id": 8,
+        "id": 9,
+        "categoria": "Audio",
         "nombre": "Parlante",
         "marca": "Kalley",
         "modelo": "SPK200",
@@ -81,7 +90,8 @@
         "img": "parlante-kalley.png"
     },
     {
-        "id": 9,
+        "id": 10,
+        "categoria": "Computadora",
         "nombre": "Mac",
         "marca": "Apple",
         "modelo": "Air",
