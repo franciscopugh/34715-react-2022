@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { collection, addDoc, getFirestore } from "firebase/firestore";
+import { collection, addDoc, getDoc, doc, getDocs, deleteDoc, updateDoc, getFirestore,  } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
@@ -25,10 +25,19 @@ async function cargarBaseDeDatos  () {
             categoria: producto.categoria,
             precio: producto.precio,
             stock: producto.stock,
-            img: ""
+            img: producto.img
           });
     })
     
 }
 
-export {db,app, cargarBaseDeDatos}
+const getProducto = (id) => {
+  getDoc(doc(db,"productos",id))
+}
+
+const getProductos = async () => {
+  const productos = await getDocs(collection(db, "productos"))
+  return productos
+}
+
+export {db,app, cargarBaseDeDatos, getProducto, getProductos}

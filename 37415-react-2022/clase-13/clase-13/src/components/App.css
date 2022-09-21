@@ -1,0 +1,11 @@
+.row {
+    background-color: antiquewhite;
+    color: black;
+    transition:  all 1s ease-out;
+}
+
+.darkMode {
+    background-color: black;
+    color: antiquewhite;
+}
+
